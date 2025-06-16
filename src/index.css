@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+
+.dashboard {
+  @apply fixed w-60 h-screen shadow-xl bg-gray-100 p-5 flex flex-col justify-between;
+}
+
+.dashboard > ul{
+    @apply flex flex-col gap-5  mt-6;
+}
+
+.dashboard > ul > li > a{
+    @apply flex  content-center  gap-2 p-3 font-semibold rounded-xl text-lg text-gray-600 transition ease-in-out duration-300 hover:shadow hover:bg-gray-200 hover:text-black;
+}
+
+.dashboard > ul > li > a.active{
+    @apply bg-gray-200 text-black shadow;
+}
+
+.bookingsTabHead{
+    @apply bg-gray-100 max-w-160 p-2 flex gap-4 rounded-2xl sticky top-0 ;
+}
+
+.bookingsTabHead > span{
+    @apply p-2 rounded-2xl w-40 text-center text-gray-600 cursor-pointer font-semibold transition ease-in-out duration-300 ;
+}
+
+.bookingsTabHead > span.active{
+    @apply bg-white text-black shadow;
+}
+
+.bookingsTabContents{
+    @apply  mt-10 h-auto flex flex-col gap-4;
+}
+
+.bookingsTabContent{
+    @apply border border-gray-500 p-5 rounded-2xl grid grid-cols-6 gap-2;
+}
+
+.bookingsTabContent > div{
+    @apply flex flex-col p-5 justify-center content-center;
+}
+
+.bookingsTabContent > div > span{
+    @apply  p-4;
+}
+
+.bookingsTabContent > div > span > h3{
+    @apply font-semibold;
+}
+
+.vehicleForm {
+    @apply flex  gap-4;
+}
+
+.vehicleForm > div {
+    @apply grid grid-cols-3 gap-5;
+}
+
+.vehicleForm > div > p{
+    @apply flex flex-col border border-gray-500 p-5 rounded-3xl w-80;
+}
+
+.vehicleForm > p{
+    @apply py-5;
+}
+
+.vehicleForm > div > p > label{
+    @apply font-semibold;
+}
+
+
+button{
+    @apply bg-black rounded-3xl transition ease-in-out duration-500 text-center text-white cursor-pointer  hover:bg-gray-500;
+}
+
+.vehicleContent{
+    @apply border border-gray-500 rounded-3xl grid grid-cols-5 gap-10;
+}
+
+.vehicleContent > div{
+    @apply flex flex-col p-4 justify-center content-center gap-4;
+}
+
+.vehicleContent > div h3{
+    @apply font-semibold;
+}
+
+
+.routeForm {
+    @apply flex  gap-4;
+}
+
+.routeForm > div {
+    @apply grid grid-cols-3 gap-5;
+}
+
+.routeForm > div > p{
+    @apply flex flex-col border border-gray-500 p-5 rounded-3xl w-80;
+}
+
+.routeForm > p{
+    @apply py-5;
+}
+
+.routeForm > div > p > label{
+    @apply font-semibold;
+}
+
+.routeContent{
+    @apply border border-gray-500 rounded-3xl grid grid-cols-7 gap-2 p-7;
+}
+
+.routeContent > div{
+    @apply flex flex-col p-4 justify-center content-center gap-4;
+}
+
+.routeContent > div > span{
+    /* @apply ; */
+}
+
+.routeContent > div h3{
+    @apply font-semibold;
+}
